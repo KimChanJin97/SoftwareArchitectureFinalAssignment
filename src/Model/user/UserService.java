@@ -3,6 +3,7 @@ package Model.user;
 import Model.exceptions.user.UserAlreadyExistingException;
 import Model.exceptions.user.UserNotExistingException;
 import Model.studyCafe.Seat;
+import Model.studyCafe.SeatRepository;
 import View.InputView;
 import View.OutputView;
 
@@ -62,6 +63,35 @@ public class UserService {
         }
     }
 
+    /** Phase 3 */
+
+    // 좌석 예약
+    public void repeatReservationCreate(User user, SeatRepository SEAT_REPOSITORY) {
+        repeatUntilValidInput(() -> seatReservation(user, SEAT_REPOSITORY));
+    }
+
+    private User seatReservation(User user, SeatRepository SEAT_REPOSITORY) {
+        String seatNumber = INPUT_VIEW.repeatEnterSeat();
+        Seat seat = SEAT_REPOSITORY.findSeatBySeatNumber(Integer.parseInt(seatNumber));
+
+        seat.setSeatNumber(Integer.parseInt(seatNumber));
+        seat.setIsConquered(true);
+
+        user.setSeat(seat);
+        return user;
+    }
+
+    // 좌석 취소
+    public void seatCancellation(User user, SeatRepository SEAT_REPOSITORY) {
+        int seatNumber = user.getSeat().getSeatNumber();
+        Seat seat = SEAT_REPOSITORY.findSeatBySeatNumber(seatNumber);
+
+        seat.setSeatNumber(seatNumber);
+        seat.setIsConquered(false);
+
+        user.setSeat(seat);
+        return;
+    }
 
 
     // Supplier

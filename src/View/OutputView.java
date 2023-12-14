@@ -27,16 +27,22 @@ public class OutputView {
     private static final String SIGNIN_SUCCESS_MESSAGE = "\n%s 아이디로 로그인에 성공했습니다.";
 
 
-    private static final String MAIN_MESSAGE = "[1] 좌석 예약 생성 [2] 좌석 예약 취소 [3] 나의 남은 시간 확인 [4] 금액 투입 [9] 종료\n숫자만 입력해주세요.";
+    private static final String MAIN_MESSAGE = "[0] 좌석 조회 [1] 좌석 예약 생성 [2] 좌석 예약 취소 [3] 나의 남은 시간 확인 [4] 금액 투입 [5] 종료\n숫자만 입력해주세요.";
     private static final String MAIN_MESSAGE_RETRY = "잘못된 입력입니다. 1 ~ 4 의 숫자로 입력해주세요.";
+
+    // 좌석 현황
+    private static final String SEAT_MESSAGE = "좌석 현황";
+
     // [1] 좌석 예약 생성
     private static final String RESERVATION_CREATE_TRY_MESSAGE = "예약을 생성하실 좌석의 번호를 입력해주세요.\n종료를 원하시면 9 를 입력해주세요.";
     private static final String RESERVATION_CREATE_SUCCESS_MESSAGE = "%d 번 좌석 예약 생성에 성공했습니다.";
     private static final String RESERVATION_CREATE_FAIL_MESSAGE = "%d 번 좌석 예약 생성에 실패했습니다.";
+    private static final String RESERVATION_CREATE_FAIL_MESSAGE_ALREADY_CONQUERING = "이미 예약하신 좌석이 있습니다.";
     // [2] 좌석 예약 취소
     private static final String RESERVATION_DELETE_TRY_MESSAGE = "예약을 취소하실 좌석의 번호를 입력해주세요.\n종료를 원하시면 9 를 입력해주세요.";
     private static final String RESERVATION_DELETE_SUCCESS_MESSAGE = "%d 번 좌석 예약 취소에 성공했습니다.";
     private static final String RESERVATION_DELETE_FAIL_MESSAGE = "%d 번 좌석 예약 취소에 실패했습니다.";
+    private static final String RESERVATION_CANCEL_FAIL_MESSAGE_NOT_CONQUERING = "예약하신 좌석이 없습니다.";
     // [3] 나의 남은 시간 확인
     private static final String TIME_CHECK_SUCCESS_MESSAGE = "현재 남은 나의 시간은 %s 분 입니다.";
     // [4] 금액 투입
@@ -44,7 +50,7 @@ public class OutputView {
     private static final String PAYMENT_CHARGE_SUCCESS_MESSAGE = "%d 원 금액 투입에 성공했습니다.";
     private static final String PAYMENT_CHARGE_FAIL_MESSAGE = "%d 원 금액 투입에 실패했습니다.";
 
-    private static final String SEAT_FORMAT = "[%d %s]";
+    private static final String SEAT_FORMAT = "[%d번 좌석: %s]";
 
     public void printBadInputMessage() {
         System.out.println(BAD_INPUT);
@@ -93,12 +99,16 @@ public class OutputView {
         System.out.println(RESERVATION_CREATE_TRY_MESSAGE);
     }
 
-    public void printReservationCreateSuccessMessage() {
-        System.out.println(RESERVATION_CREATE_SUCCESS_MESSAGE);
+    public void printReservationCreateSuccessMessage(int seatNumber) {
+        System.out.println(String.format(RESERVATION_CREATE_SUCCESS_MESSAGE, seatNumber));
     }
 
     public void printReservationCreateFailMessage() {
         System.out.println(RESERVATION_CREATE_FAIL_MESSAGE);
+    }
+
+    public void printReservationCreateFailMessageAlreadyConquering() {
+        System.out.println(RESERVATION_CREATE_FAIL_MESSAGE_ALREADY_CONQUERING);
     }
 
     // 좌석 취소
@@ -106,12 +116,17 @@ public class OutputView {
         System.out.println(RESERVATION_DELETE_TRY_MESSAGE);
     }
 
-    public void printReservationDeleteSuccessMessage() {
-        System.out.println(RESERVATION_DELETE_SUCCESS_MESSAGE);
-    }
 
     public void printReservationDeleteFailMessage() {
         System.out.println(RESERVATION_DELETE_FAIL_MESSAGE);
+    }
+
+    public void printReservationCancelFailMessageNotConquering() {
+        System.out.println(RESERVATION_CANCEL_FAIL_MESSAGE_NOT_CONQUERING);
+    }
+
+    public void printReservationDeleteSuccessMessage(int seatNumber) {
+        System.out.println(String.format(RESERVATION_DELETE_SUCCESS_MESSAGE, seatNumber));
     }
 
     // 금액 투입
@@ -132,8 +147,10 @@ public class OutputView {
 
     public void printSeats(SeatRepository seats) {
         List<Seat> list = seats.getSeats();
-        list.stream().forEach(seat -> String.format(SEAT_FORMAT, seat.getSeatNumber(), seat.getIsConquered()));
+        System.out.println("좌석 현황");
+        list.forEach(seat -> System.out.println(String.format(SEAT_FORMAT, seat.getSeatNumber(), seat.getIsConquered() ? "사용중" : "사용가능")));
     }
+
 
 
 

@@ -8,5 +8,6 @@ public class Application {
 
         studyCafeController.phaseOne();
         studyCafeController.phaseTwo();
+        studyCafeController.phaseThree();
     }
 }

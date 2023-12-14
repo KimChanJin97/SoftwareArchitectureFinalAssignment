@@ -21,6 +21,9 @@ public class InputView {
     private static final int SECOND_CHOICE_RANGE_START = 1;
     private static final int SECOND_CHOICE_RANGE_END = 5;
 
+    private static final int THIRD_CHOICE_RANGE_START = 0;
+    private static final int THIRD_CHOICE_RANGE_END = 5;
+
     /** Phase 1 */
     // [1] 회원가입 [0] 종료
     public String repeatEnterPhaseOneChoice() {
@@ -60,6 +63,18 @@ public class InputView {
     }
 
     /** Phase 3 */
+    public String repeatEnterPhaseThreeChoice() {
+        return repeatUntilValidInput(this::enterPhaseThreeInput);
+    }
+
+    public String enterPhaseThreeInput() {
+        String choice = scanner.nextLine();
+        validatePhaseThree(choice);
+
+        return choice;
+    }
+
+
     // 금액 투입
     public String repeatEnterPayment() {
         return repeatUntilValidInput(this::enterPayment);
@@ -88,6 +103,14 @@ public class InputView {
         int intChoice = Integer.parseInt(choice.trim());
 
         if (intChoice < FIRST_CHOICE_RANGE_START || intChoice > FIRST_CHOICE_RANGE_END) {
+            throw new InputBadFirstChoiceException();
+        }
+    }
+
+    private void validatePhaseThree(String choice) {
+        int intChoice = Integer.parseInt(choice.trim());
+
+        if (intChoice < THIRD_CHOICE_RANGE_START || intChoice > THIRD_CHOICE_RANGE_END) {
             throw new InputBadFirstChoiceException();
         }
     }
