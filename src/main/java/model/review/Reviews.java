@@ -1,4 +1,6 @@
-package model;
+package model.review;
+
+import model.studyCafe.StudyCafe;
 
 import java.util.ArrayList;
 

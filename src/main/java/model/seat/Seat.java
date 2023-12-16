@@ -1,6 +1,7 @@
-package model;
+package model.seat;
 
 import exception.SeatReservationException;
+import model.user.User;
 
 public class Seat {
 

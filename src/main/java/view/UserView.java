@@ -3,8 +3,8 @@ package view;
 import exception.UserNameException;
 import exception.UserRoleException;
 import java.util.Scanner;
-import model.User;
-import model.UserRole;
+import model.user.User;
+import model.user.UserRole;
 
 public class UserView {
 

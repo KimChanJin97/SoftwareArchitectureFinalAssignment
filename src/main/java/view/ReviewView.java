@@ -1,12 +1,9 @@
 package view;
 
 import exception.ReviewContentException;
-import exception.StudyCafeNameException;
 import exception.UserRoleException;
-import model.Review;
-import model.Reviews;
-import model.StudyCafe;
-import model.StudyCafes;
+import model.review.Reviews;
+import model.studyCafe.StudyCafe;
 
 import java.util.Scanner;
 

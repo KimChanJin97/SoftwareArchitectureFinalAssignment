@@ -1,6 +1,8 @@
-package model;
+package model.seat;
 
 import exception.SeatReservationException;
+import model.user.User;
+
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;

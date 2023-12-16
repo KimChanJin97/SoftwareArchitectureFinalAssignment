@@ -1,6 +1,6 @@
 import controller.StudyCafeController;
 import controller.UserController;
-import model.User;
+import model.user.User;
 
 public class Application {
 

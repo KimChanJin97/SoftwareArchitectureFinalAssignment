@@ -2,11 +2,11 @@ package controller;
 
 import exception.SeatReservationException;
 import exception.StudyCafeException;
-import model.Review;
-import model.Reviews;
-import model.StudyCafe;
-import model.StudyCafes;
-import model.User;
+import model.review.Review;
+import model.review.Reviews;
+import model.studyCafe.StudyCafe;
+import model.studyCafe.StudyCafes;
+import model.user.User;
 import view.ReviewView;
 import view.StudyCafeView;
 

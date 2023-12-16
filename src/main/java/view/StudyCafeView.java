@@ -4,8 +4,8 @@ import exception.SeatNumberException;
 import exception.StudyCafeException;
 import exception.StudyCafeNameException;
 import java.util.Scanner;
-import model.StudyCafe;
-import model.StudyCafes;
+import model.studyCafe.StudyCafe;
+import model.studyCafe.StudyCafes;
 
 public class StudyCafeView {
 

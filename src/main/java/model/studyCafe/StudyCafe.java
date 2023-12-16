@@ -1,6 +1,9 @@
-package model;
+package model.studyCafe;
 
 import exception.SeatReservationException;
+import model.seat.Seat;
+import model.seat.Seats;
+import model.user.User;
 
 public class StudyCafe {
 

@@ -1,6 +1,10 @@
-package model;
+package model.review;
+
+import model.studyCafe.StudyCafe;
+import model.user.User;
 
 import java.util.Date;
+
 
 public class Review {
     private final StudyCafe studyCafe;

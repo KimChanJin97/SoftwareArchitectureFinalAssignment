@@ -1,8 +1,8 @@
 package controller;
 
-import model.User;
-import model.UserRole;
-import model.Users;
+import model.user.User;
+import model.user.UserRole;
+import model.user.Users;
 import view.UserView;
 
 public class UserController {
