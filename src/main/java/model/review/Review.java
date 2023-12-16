@@ -1,12 +1,12 @@
 package model.review;
 
-import model.studyCafe.StudyCafe;
-import model.user.User;
-
 import java.util.Date;
+import model.studycafe.StudyCafe;
+import model.user.User;
 
 
 public class Review {
+
     private final StudyCafe studyCafe;
     private final User author;
     private final Date createDate;
@@ -19,7 +19,9 @@ public class Review {
         this.content = content;
     }
 
-    public StudyCafe getStudyCafe() { return studyCafe; }
+    public StudyCafe getStudyCafe() {
+        return studyCafe;
+    }
 
     public String getAuthor() {
         return author.getName();

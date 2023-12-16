@@ -10,19 +10,19 @@ public class UserView {
 
     private final Scanner sc = new Scanner(System.in);
 
-    public void askForAction(){
+    public void askForAction() {
         System.out.println("\n스터디카페 시스템입니다\n[1] 로그인\n[2] 회원가입\n[3] 종료");
     }
 
-    public void loginComment(){
+    public void loginComment() {
         System.out.println("\n로그인을 진행합니다.");
     }
 
-    public void registerComment(){
+    public void registerComment() {
         System.out.println("\n회원가입을 진행합니다.");
     }
 
-    public void registerSuccessComment(User user){
+    public void registerSuccessComment(User user) {
         System.out.println("\n" + user.getName() + "님 회원가입을 축하합니다.");
     }
 
@@ -34,12 +34,12 @@ public class UserView {
         System.out.println("\n역할을 선택해주세요\n[1] 스터디카페 관리자\n[2] 스터디카페 손님");
     }
 
-    public int inputAction(){
-        try{
+    public int inputAction() {
+        try {
             String userInput = sc.nextLine();
             validateInputNumeric(userInput);
             return Integer.parseInt(userInput);
-        } catch(UserRoleException e){
+        } catch (UserRoleException e) {
             System.out.println(e.getMessage());
             return inputAction();
         }

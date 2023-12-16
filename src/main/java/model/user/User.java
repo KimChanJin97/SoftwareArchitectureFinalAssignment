@@ -22,15 +22,15 @@ public class User {
     }
 
     public boolean isLogin() {
-    	return isLogin;
+        return isLogin;
     }
 
     public void login() {
-    	isLogin = true;
+        isLogin = true;
     }
 
     public void logout() {
-    	isLogin = false;
+        isLogin = false;
     }
 
 

@@ -1,4 +1,4 @@
-package model.studyCafe;
+package model.studycafe;
 
 import exception.SeatReservationException;
 import model.seat.Seat;

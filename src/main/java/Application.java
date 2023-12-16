@@ -12,7 +12,7 @@ public class Application {
         User user = new User("guest", null);
         while (true) {
             initialAction = userController.inputAction();
-            switch(initialAction){
+            switch (initialAction) {
                 case 1:
                     user = userController.login();
                     break;
@@ -26,7 +26,7 @@ public class Application {
                     System.out.println("잘못된 입력입니다.");
                     continue;
             }
-            if(user.isAdmin()){
+            if (user.isAdmin()) {
                 studyCafeController.adminAction(user);
                 continue;
             }

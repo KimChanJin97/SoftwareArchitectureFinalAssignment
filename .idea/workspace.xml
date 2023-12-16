@@ -5,62 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92aca35e-02d0-403d-9067-e7ffea6974ef" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SoftwareArchitectureFinalAssignment.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/finalAssignment.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/controller/StudyCafeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/exception/ReviewContentException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/exception/SeatNumberException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/exception/SeatReservationException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/exception/StudyCafeException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/exception/StudyCafeNameException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/exception/UserNameException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/exception/UserRoleException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/main/java/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/model/Review.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/model/Reviews.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/model/Seat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/model/Seats.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/model/StudyCafe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/model/StudyCafes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/model/UserRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/model/Users.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/test/java/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/view/ReviewView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/view/StudyCafeView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareArchitectureFinalAssignment/view/UserView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/Controller/StudyCafeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/Controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/exception/ReviewContentException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/exception/SeatNumberException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/exception/SeatReservationException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/exception/StudyCafeException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/exception/StudyCafeNameException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/exception/UserNameException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/exception/UserRoleException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/main/java/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/model/Review.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/model/Reviews.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/model/Seat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/model/Seats.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/model/StudyCafe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/model/StudyCafes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/model/UserRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/model/Users.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/test/java/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/view/ReviewView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/view/StudyCafeView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/finalAssignment/view/UserView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/StudyCafeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/StudyCafeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exception/ReviewContentException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exception/ReviewContentException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exception/SeatNumberException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exception/SeatNumberException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exception/StudyCafeNameException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exception/StudyCafeNameException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/review/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/review/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/review/Reviews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/review/Reviews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/seat/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/seat/Seat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/seat/Seats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/seat/Seats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/studyCafe/StudyCafe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/studycafe/StudyCafe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/studyCafe/StudyCafes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/studycafe/StudyCafes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/user/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/user/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/ReviewView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/ReviewView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/StudyCafeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/StudyCafeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/UserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/UserView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,9 +105,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.Application.executor": "Run",
+    "Gradle.Build SoftwareArchitectureFinalAssignment.executor": "Run",
+    "Gradle.Building Gradle Dependencies.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "new",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -153,6 +122,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.3816092",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -186,11 +156,15 @@
       <option name="presentableId" value="Default" />
       <updated>1702738516456</updated>
       <workItem from="1702738518200" duration="822000" />
-      <workItem from="1702739360046" duration="220000" />
+      <workItem from="1702739360046" duration="3600000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -2,30 +2,32 @@ package view;
 
 import exception.ReviewContentException;
 import exception.UserRoleException;
-import model.review.Reviews;
-import model.studyCafe.StudyCafe;
-
 import java.util.Scanner;
+import model.review.Reviews;
+import model.studycafe.StudyCafe;
 
 public class ReviewView {
+
     private final Scanner sc = new Scanner(System.in);
 
-    public void askForWriteReview(){
+    public void askForWriteReview() {
         System.out.println("원하시는 작업을 선택해주세요\n[1] 리뷰 작성 \n[2] 종료");
     }
 
-    public void checkReview() { System.out.println("\n작성된 리뷰를 확인합니다.\n"); }
+    public void checkReview() {
+        System.out.println("\n작성된 리뷰를 확인합니다.\n");
+    }
 
     public void askForContent() {
         System.out.print("\n리뷰 내용을 입력해주세요: ");
     }
 
-    public int inputAction(){
-        try{
+    public int inputAction() {
+        try {
             String userInput = sc.nextLine();
             validateInputNumeric(userInput);
             return Integer.parseInt(userInput);
-        } catch(UserRoleException e){
+        } catch (UserRoleException e) {
             System.out.println(e.getMessage());
             return inputAction();
         }
@@ -36,22 +38,25 @@ public class ReviewView {
             String content = sc.nextLine();
             validateReviewContent(content);
             return content;
-        } catch (ReviewContentException e){
+        } catch (ReviewContentException e) {
             System.out.println(e.getMessage());
             return inputReview();
         }
     }
 
     public void showReviewList(StudyCafe studyCafe) {
-        if(Reviews.reviewIsEmpty()) {
+        if (Reviews.reviewIsEmpty()) {
             System.out.println("작성된 리뷰가 없습니다.\n");
-        }else {
+        } else {
             Reviews.showReviews(studyCafe);
         }
     }
 
-    public void validateReviewContent(String reviewContent) { validateExist(reviewContent); }
-    public void validateExist(String reviewContent){
+    public void validateReviewContent(String reviewContent) {
+        validateExist(reviewContent);
+    }
+
+    public void validateExist(String reviewContent) {
         if (reviewContent.isEmpty()) {
             throw new ReviewContentException("리뷰 내용은 공백일 수 없습니다.");
         }

@@ -1,4 +1,4 @@
-package model.studyCafe;
+package model.studycafe;
 
 import java.util.ArrayList;
 

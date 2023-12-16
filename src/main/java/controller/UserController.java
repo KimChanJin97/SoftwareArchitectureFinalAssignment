@@ -9,17 +9,17 @@ public class UserController {
 
     private final UserView userView = new UserView();
 
-    public int inputAction(){
+    public int inputAction() {
         userView.askForAction();
         return userView.inputAction();
     }
 
-    public User login(){
+    public User login() {
         userView.loginComment();
         userView.askForName();
         String name = userView.inputName();
         User user = Users.getUserByName(name);
-        if(user == null){
+        if (user == null) {
             System.out.println("존재하지 않는 사용자입니다.");
             return login();
         }
@@ -42,6 +42,6 @@ public class UserController {
 
 
     public void exit() {
-    	System.exit(0);
+        System.exit(0);
     }
 }

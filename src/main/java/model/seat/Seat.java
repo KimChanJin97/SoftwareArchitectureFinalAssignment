@@ -28,7 +28,7 @@ public class Seat {
     }
 
     public void showSeat() {
-        System.out.println("[" + this.seatNumber +"] " + (this.empty ? " - 사용가능" : " - 사용중"));
+        System.out.println("[" + this.seatNumber + "] " + (this.empty ? " - 사용가능" : " - 사용중"));
     }
 
     public void assignSeatToUser(User user) {
